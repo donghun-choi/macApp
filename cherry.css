@@ -1,0 +1,64 @@
+button {
+    padding: 35%;
+}
+
+body {
+    --btnRed: #fc625d;
+    --btnYellow: #fdbc40;
+    --btnGreen: #35cd4b;
+    --backbroundColor: #011627;
+    --mainpadding: 0.5rem;
+    --maintextcolor: lightyellow;
+    --maintextlineheight: 2rem;
+    --width: 20%;
+}
+/*
+--btnRed: 건들 필요 없음. 빨간 버튼 색갈
+--btnYellow: 건들 필요 없음. 노란 버튼 색갈
+--btnGreen: 건들 필요 없음. 초록 버튼 색갈
+--backbroundColor: 배경 색갈
+--mainpadding: 메인 텍스트가 표시되는 영역과 테두리간의 간격. 직접 바꿔보면 이해가 쉬움.
+--maintextcolor: 메인 텍스트의 색갈.
+--maintextlineheight: 줄간격. 직접 바꿔보면 이해가 쉬움.
+--width: 넓이. auto는 자동. npx로 설정 가능(n은 실수)
+색갈은 전부 rgb(r,g,b) 혹은 #헥스코드 혹은 보편적인 색갈은 직접입력도 (Ex: red, Darkgrey)가능
+*/
+
+.windowMac {
+    background-color: var(--backbroundColor);
+
+    color: white;
+
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: var(--mainpadding);
+
+    width: var(--width);
+}
+
+.gridForBtn {
+    display: grid;
+    grid-template-columns: repeat(3, 1.1rem);
+}
+
+#btnRed {
+    background-color: var(--btnRed);
+    border-radius: 50%;
+    margin: 0.5rem;
+    border: 0;
+}
+#btnYellow {
+    background-color: var(--btnYellow);
+    border-radius: 50%;
+    margin: 0.5rem;
+    border: 0;
+}
+#btnGreen {
+    background-color: var(--btnGreen);
+    border-radius: 50%;
+    margin: 0.5rem;
+    border: 0;
+}
+.mainTextContainer {
+    color: var(--maintextcolor);
+    line-height: var(--maintextlineheight);
+}
